@@ -1,6 +1,6 @@
 {
     "name": "mellaoui/sparkle-builder",
-"description": "This is a view builder for laravel app add your views and start edit them using sparkle builder",
+"description": "This is a view builder for laravel app add your views and start edit theme using sparkle builder",
     "license": "MIT",
     "autoload": {
         "psr-4": {
