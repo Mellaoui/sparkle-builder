@@ -2,15 +2,10 @@
 
 namespace Mellaoui\SparkleBuilder\Builders;
 
-use Mellaoui\SparkleBuilder\Interfaces\ThemeBuilder;
+use Mellaoui\SparkleBuilder\Interfaces\PageBuilderInterface;
 
-class PageBuilder implements ThemeBuilder
+class PageBuilder implements PageBuilderInterface
 {
-    
-    public function setMenuLinks($links): array
-    {
-        return $links;
-    }
 
     public function setHeroText($text): string
     {

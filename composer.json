@@ -19,6 +19,22 @@
         }
     ],
     "require-dev": {
-        "phpunit/phpunit": "^10.2"
+        "phpunit/phpunit": "^10.2",
+        "orchestra/testbench": "^8.5"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mellaoui\\SparkleBuilder\\SparkleBuilderServiceProvider"
+            ],
+            "aliases": {
+                "SparkleBuilder": "Mellaoui\\SparkleBuilder\\Facades\\SparkleBuilder"
+            }
+        }
     }
 }

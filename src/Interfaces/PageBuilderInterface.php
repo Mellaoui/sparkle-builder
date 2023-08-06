@@ -2,9 +2,8 @@
 
 namespace Mellaoui\SparkleBuilder\Interfaces;
 
-interface ThemeBuilder
+interface PageBuilderInterface
 {
-    public function setMenuLinks($links);
     public function setHeroText($text);
     public function setHeroImage();
     public function setImages();
